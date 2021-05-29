@@ -7,7 +7,7 @@ class ObjectRepository:
         self.driver = driver
 
     def click1(self,element):
-        self.driver.find_element_by_xpath(element).click()
+       return self.driver.find_element_by_xpath(element).click()
 
     def print_text(self,element):
         x = self.driver.find_element_by_xpath(element).text()
@@ -15,9 +15,9 @@ class ObjectRepository:
 
     def drop_down_text(self,element,text):
         drop_down = Select(self.driver.find_element_by_xpath(element))
-        drop_down.select_by_visible_text(text)
+        return drop_down.select_by_visible_text(text)
 
     def drop_down_index(self, element, index):
         drop_down = Select(self.driver.find_element_by_xpath(element))
-        drop_down.select_by_index(index)
+        return drop_down.select_by_index(index)
 
