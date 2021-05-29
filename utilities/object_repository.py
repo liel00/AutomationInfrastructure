@@ -6,7 +6,7 @@ class ObjectRepository:
     def __init__(self, driver):
         self.driver = driver
 
-    def click(self,element):
+    def click1(self,element):
         self.driver.find_element_by_xpath(element).click()
 
     def print_text(self,element):

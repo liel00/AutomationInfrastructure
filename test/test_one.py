@@ -4,5 +4,5 @@ from utilities import Base
 
 class TestOne(Base.Base):
     def test_one(self):
-        one = OneTest(self.driver)
-        one.click_search()
+        one = OneTest()
+        one.click_gmail()
