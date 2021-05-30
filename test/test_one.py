@@ -4,5 +4,5 @@ from utilities import Base
 
 class TestOne(Base.Base):
     def test_one(self):
-        one = OneTest()
+        one = ObjectTest()
         one.click_gmail()
